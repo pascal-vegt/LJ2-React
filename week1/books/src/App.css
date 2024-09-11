@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: cyan;
+  display: flex;
+  gap: 20vw;
+}
+
+.layout {
+  width: 80vw;
+  margin: 0 auto;
+}
