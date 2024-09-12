@@ -4,21 +4,23 @@ import Booklist from "./components/Booklist";
 import Layout from "./components/LayOut";
 
 function App() {
+
   return (
     <>
       <Header
         image="navbar image"
         title="titel"
         text1="home"
-        text2="abouot"
+        text2="about"
         text3="contact"
       />
       <h1>hello world</h1>
       <h2>jason derulo is de beste docent</h2>
 
-      <Layout>
-        <Booklist />
-      </Layout>
+      <Layout/>
+      <Booklist />
+      <h2>jason is jason</h2>
+        <button>Click marc</button>
     </>
   );
 }
