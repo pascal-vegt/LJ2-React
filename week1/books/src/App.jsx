@@ -4,7 +4,6 @@ import Booklist from "./components/Booklist";
 import Layout from "./components/LayOut";
 
 function App() {
-
   return (
     <>
       <Header
@@ -17,10 +16,11 @@ function App() {
       <h1>hello world</h1>
       <h2>jason derulo is de beste docent</h2>
 
-      <Layout/>
-      <Booklist />
+      <Layout>
+        <Booklist />
+      </Layout>
       <h2>jason is jason</h2>
-        <button>Click marc</button>
+      <button>Click marc</button>
     </>
   );
 }
