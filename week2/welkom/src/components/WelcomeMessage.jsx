@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const WelcomeMessage = () => {
   // Stap 2: Maak een useState met message en setMessage
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
 
   // Stap 3: Importeer useEffect en gebruik het om het bericht te updaten op basis van het tijdstip van de dag
   useEffect(() => {
     // Maak een variabele aan om de huidige tijd op te halen
     const currentTime = new Date();
     const hours = currentTime.getHours();
-    let newMessage = "";
+    let newMessage = '';
 
     // Bepaal of het ochtend, middag of avond is
     if (hours < 12) {
-      newMessage = "Goedemorgen";
+      newMessage = 'Goedemorgen';
     } else if (hours >= 12 && hours < 18) {
-      newMessage = "Goedemiddag";
+      newMessage = 'Goedemiddag';
     } else {
-      newMessage = "Goedenavond";
+      newMessage = 'Goedenavond';
     }
 
     // Gebruik useState om de status van message bij te werken
