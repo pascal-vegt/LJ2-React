@@ -18,22 +18,20 @@
 }
 
 .nav {
-  margin: 20px;
   background-color: rgb(25, 25, 25);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  width: 10vw;
-  background-color: hotpink;
-  border-radius: 15px;
+  width: 7vw;
+  background-color: black;
 }
 
 .icons {
-  background-color: #a0a0a0;
-  width: 40px;
-  height: 40px;
+  background-color: #404040;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,9 +39,44 @@
 }
 
 .icon {
-  background-color: lightblue;
+  color: white;
+  width: 50%;
+  height: 50%;
 }
 
 .pair {
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 55vh;
+}
+
+.body {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.orderList{
+  background-color: black;
+  border-radius: 20px;
+  margin: 50px;
+  color: white;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.status{
+  padding: 2px;
+  border-radius: 5px;
 }
