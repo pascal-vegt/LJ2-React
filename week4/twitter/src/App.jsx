@@ -1,14 +1,19 @@
+import { useState } from "react";
 import "./App.css";
 import CreateMessage from "./components/CreateMessage";
 import MessageList from "./components/MessageList";
 
 function App() {
-  let name = "jason";
-  let message = "first message";
+  const [messages, setMessages] = useState([]);
+
+  const addMessage = (name, message) => {
+    setMessages([...messages, { name, message }]);
+  };
+
   return (
     <>
-      <CreateMessage />
-      <MessageList name={name} message={message} />
+      <CreateMessage addMessage={addMessage} />
+      <MessageList messages={messages} />
     </>
   );
 }

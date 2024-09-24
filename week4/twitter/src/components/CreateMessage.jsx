@@ -1,12 +1,27 @@
-const CreateMessage = () => {
+import { useState } from "react";
+
+const CreateMessage = ({ addMessage }) => {
+  const [message, setMessage] = useState("");
+
   const userInputHandler = (e) => {
-    console.log(e.target.value);
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addMessage("jason", message); // Assuming the name is "jason" for now
+    setMessage(""); // Clear the textarea after adding the message
   };
 
   return (
-    <form action="">
-      <textarea cols="50" rows="5" onChange={userInputHandler}></textarea>
-      <button>Toevoegen</button>
+    <form onSubmit={handleSubmit}>
+      <textarea
+        cols="50"
+        rows="5"
+        value={message}
+        onChange={userInputHandler}
+      ></textarea>
+      <button type="submit">Toevoegen</button>
     </form>
   );
 };
