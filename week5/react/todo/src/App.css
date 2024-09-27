@@ -28,6 +28,10 @@ ul label {
   font-size: 1.5vw;
 }
 
+ul label:hover {
+  text-decoration: line-through;
+}
+
 .todoiteminput {
   margin-top: 20px;
 }
@@ -50,8 +54,8 @@ ul label {
 }
 
 .todoiteminput input[type="button"] {
-    background-color: #fff;
-    border-color: #000;
-    border-radius: 3px;
-    margin-left: 5px;
+  background-color: #fff;
+  border-color: #000;
+  border-radius: 3px;
+  margin-left: 5px;
 }
