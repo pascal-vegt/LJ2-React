@@ -2,10 +2,18 @@ import Header from "./components/Header";
 import "./App.css";
 import Booklist from "./components/Booklist";
 import Layout from "./components/LayOut";
+import { useState } from "react";
 
 function App() {
+
+const [todo, setTodo] = useState([])
+const [textInput, setTextInput] = useState("")
+
+setMessage(textInput)
+
   return (
-    <>
+    <> 
+
       <Header
         image="navbar image"
         title="titel"

@@ -1,6 +1,5 @@
 
 const CreateMessage = ({ message }) => {
-let userInputHandler;
 
 
   return (
