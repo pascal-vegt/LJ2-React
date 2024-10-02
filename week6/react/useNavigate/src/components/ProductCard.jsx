@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     navigate(`/products/${product.id}`);
   }
 
-    product.img = `../public/${product.name}.png`
+    product.img = `../${product.name}.png`
 
   return (
     <>

@@ -43,7 +43,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.36px;
   text-align: center;
 }
 
@@ -52,7 +51,6 @@ body {
   font-family: Inter;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: -0.48px;
   margin: 10px 0px 0px 5px;
 }
 
@@ -94,7 +92,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -2.38px;
 }
 
 .detail-text-p {
@@ -105,7 +102,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -1.82px;
 }
 
 .button {
@@ -115,7 +111,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -0.2px;
   width: 98px;
   height: 52px;
   border-radius: 7px;
