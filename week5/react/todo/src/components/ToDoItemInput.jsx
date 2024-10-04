@@ -1,32 +1,28 @@
 import { useState } from "react";
 
-const ToDoItemInput = () => {
-  const [message, setMessage] = useState([]);
-  const [textInput, setTextInput] = useState("");
+const ToDoItemInput = ({ onAddItem }) => {
+  const [inputValue, setInputValue] = useState("");
 
-  let idNumber = 0;
-
-  const updateTextInput = (e) => {
-    setTextInput(e.target.value);
-  };
-
-  const updateMessage = () => {
-    setMessage({
-      id: idNumber,
-      text: textInput,
-    });
+  const handleAddItem = () => {
+    if (inputValue.trim() === "") return;
+    const newItem = {
+      id: Date.now(),
+      text: inputValue,
+      completed: false,
+    };
+    onAddItem(newItem);
+    setInputValue("");
   };
 
   return (
-    <div className="todoiteminput">
-      <label htmlFor="input">Add Item</label>
-      <br />
-      <textarea
-        name="ToDoInput"
-        id="input"
-        onChange={updateTextInput}
-      ></textarea>
-      <input type="button" value="Submit" id="button" onClick={updateMessage} />
+    <div className="todo-item-input">
+      <input
+        type="text"
+        placeholder="What to do?"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+      />
+      <button className="add-button" onClick={handleAddItem}>+</button>
     </div>
   );
 };
