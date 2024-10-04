@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.objectContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pixel {
+    width: 32px;
+    height: 32px;
+}
