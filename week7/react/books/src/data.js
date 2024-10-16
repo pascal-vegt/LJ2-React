@@ -1,8 +1,4 @@
-import Book from "./Book";
-import { useState } from "react";
-
-const Booklist = () => {
-  const [books, setBooks] = useState([
+const books = [
     {
       title: "Sapiens: A Brief History of Humankind",
       author: "Yuval Noah Harari",
@@ -21,17 +17,6 @@ const Booklist = () => {
       id: 3,
       category: "Classic Literature",
     },
-  ]);
+  ]
 
-  const bookStatus = () => {};
-
-  return (
-    <>
-      {books.map((book) => (
-        <Book title={book.title} image={book.image} author={book.author} />
-      ))}
-    </>
-  );
-};
-
-export default Booklist;
+  export default books
