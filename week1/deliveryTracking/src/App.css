@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.body {
+body {
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .top_icons {
@@ -26,6 +29,9 @@
   height: 100vh;
   width: 7vw;
   background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .icons {
@@ -65,7 +71,7 @@ body {
   color: white;
   padding: 20px;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 20px 0 0 80px;
   border-radius: 10px;
 }
 
